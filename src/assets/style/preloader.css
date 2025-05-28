@@ -1,0 +1,65 @@
+.loader-animation {
+    animation: moveCircles 5s ease-in-out forwards;
+}
+
+@keyframes moveCircles {
+    0% {
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    33% {
+        left: 33%;
+        width: 100px;
+        height: 100px;
+    }
+
+    66% {
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
