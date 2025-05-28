@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import durga from '../../assets/imgs/fevicon.png'
 
 
 function Hero() {
@@ -26,7 +27,7 @@ function Hero() {
                         <div className="w-[60%] md:w-[30%] m-auto " data-aos="flip-left"
                                 data-aos-easing="ease-out-cubic" data-aos-offset="110"
                                 data-aos-duration="2000">
-                            <img src="../src/assets/fevicon.png" alt="HELLO"  />
+                            <img src={durga} alt="HELLO"  />
                         </div>
                     </div>
 
