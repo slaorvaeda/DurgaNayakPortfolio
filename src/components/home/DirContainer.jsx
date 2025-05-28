@@ -1,27 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import aws from '../../assets/imgs/aws.png'
+import css from '../../assets/imgs/css.svg'
+import kub from '../../assets/imgs/kubernetes.svg'
+import github from '../../assets/imgs/github.svg'
+import gsap from '../../assets/imgs/gsap.svg'
+import firebase from '../../assets/imgs/firebase.svg'
+import tailwindcss from '../../assets/imgs/tailwindcss.svg'
 
 
 function DirContainer() {
 
     const techLogos = [
-        {
-            src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            alt: "React",
-            title: "React"
-        },
-        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", alt: "Node.js", title: "Node.js" },
-        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", title: "JavaScript" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5", title: "HTML5" },
-        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg", alt: "CSS3", title: "CSS3" },
+        { src: css, alt: "CSS3", title: "CSS3" },
+        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", title: "JavaScript" },
+        {src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",alt: "React",title: "React"},
+        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", alt: "Node.js", title: "Node.js" },
+        { src: tailwindcss, alt: "Tailwind CSS", title: "Tailwind CSS" },
+        { src: gsap, alt: "GSAP", title: "GSAP (Animation)" },
+        { src: firebase, alt: "Firebase", title: "Firebase" },
+        { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", alt: "TypeScript", title: "TypeScript" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "MongoDB", title: "MongoDB" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", alt: "Express", title: "Express", className: "bg-white rounded" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", title: "Git" },
+        { src: github, alt: "github", title: "github (Deployment)" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", alt: "Figma", title: "Figma" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", alt: "Vercel", title: "Vercel (Deployment)" },
+
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg", alt: "Netlify", title: "Netlify (Deployment)" },
         { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", alt: "Docker", title: "Docker (Deployment)" },
         { src: aws, alt: "AWS", title: "AWS (Deployment)" },
+        { src: kub, alt: "kub", title: "kubernetic (Deployment)" },
     ];
 
     const [news, setNews] = useState([]);
