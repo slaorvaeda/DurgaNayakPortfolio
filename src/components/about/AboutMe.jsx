@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import GooeyDownloadButton from "../GooeyDownloadButton";
 
 function isAndroid() {
   return /Android/i.test(navigator.userAgent);
@@ -25,6 +26,9 @@ function AboutMe() {
           <br /><br />
           When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, or connecting with like-minded professionals. I'm always eager to take on new challenges and collaborate on exciting projects!
         </div>
+      </div>
+      <div className="w-full flex justify-center mt-10">
+        <GooeyDownloadButton href="/Durga2025.pdf" filename="Durga2025.pdf" />
       </div>
     </>
   )
