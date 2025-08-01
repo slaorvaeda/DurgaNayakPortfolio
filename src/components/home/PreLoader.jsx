@@ -10,22 +10,35 @@ function PreLoader() {
 
             setTimeout(() => {
                 const loaderText = document.getElementById('loaderText');
-                loaderText.classList.add('fade-in');
+                if (loaderText) {
+                    loaderText.classList.add('fade-in');
+                }
             }, 5000); 
 
             setTimeout(() => {
                 const circles = [circle1, circle2, circle3];
                 circles.forEach(circle => {
-                    circle.classList.add('fade-out');
+                    if (circle) {
+                        circle.classList.add('fade-out');
+                    }
                 });
             }, 5000); 
 
             setTimeout(() => {
-                document.getElementById('preloader').classList.add('fade-out');
-                setTimeout(() => {
-                    document.getElementById('preloader').style.display = 'none';
-                    document.getElementById('mainContent').classList.remove('hidden');
-                }, 2000); 
+                const preloader = document.getElementById('preloader');
+                const mainContent = document.getElementById('mainContent');
+                
+                if (preloader) {
+                    preloader.classList.add('fade-out');
+                    setTimeout(() => {
+                        if (preloader) {
+                            preloader.style.display = 'none';
+                        }
+                        if (mainContent) {
+                            mainContent.classList.remove('hidden');
+                        }
+                    }, 2000); 
+                }
             }, 6000); 
         };
 
